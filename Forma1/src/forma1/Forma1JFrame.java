@@ -50,7 +50,6 @@ public class Forma1JFrame extends javax.swing.JFrame {
         jButtonDeleteTeam = new javax.swing.JButton();
         jTextFieldF1Salary = new javax.swing.JTextField();
         jComboBoxMoveToTeam = new javax.swing.JComboBox<>();
-        jLabelTitleMoveToTeam = new javax.swing.JLabel();
         jButtonTeamSalary = new javax.swing.JButton();
         jTextFieldTeamSalary = new javax.swing.JTextField();
         jPanelRacer = new javax.swing.JPanel();
@@ -67,6 +66,7 @@ public class Forma1JFrame extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextAreaErrorMessage = new javax.swing.JTextArea();
         jButtonExit = new javax.swing.JButton();
+        jButtonMoveToTeam = new javax.swing.JButton();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -97,8 +97,6 @@ public class Forma1JFrame extends javax.swing.JFrame {
         jButtonF1Salary.setText("F1 összbevétele");
 
         jButtonDeleteTeam.setText("Töröl");
-
-        jLabelTitleMoveToTeam.setText("csapatba átrak.");
 
         jButtonTeamSalary.setText("Csapat összbevétele");
 
@@ -195,6 +193,8 @@ public class Forma1JFrame extends javax.swing.JFrame {
 
         jButtonExit.setText("Kilépés a programból");
 
+        jButtonMoveToTeam.setText("csapatba átrak...");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -225,12 +225,11 @@ public class Forma1JFrame extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jButtonTeamSalary, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-                                    .addComponent(jComboBoxMoveToTeam, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addComponent(jLabelTitleMoveToTeam))
-                            .addComponent(jTextFieldTeamSalary, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
+                                .addComponent(jComboBoxMoveToTeam, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jTextFieldTeamSalary, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButtonMoveToTeam, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(77, 77, 77)
@@ -268,9 +267,9 @@ public class Forma1JFrame extends javax.swing.JFrame {
                             .addComponent(jLabelTitleTeamName)
                             .addComponent(jComboBoxMoveToTeam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextFieldTeamName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelTitleMoveToTeam))
+                            .addComponent(jButtonMoveToTeam))
                         .addGap(18, 18, 18)
                         .addComponent(jButtonAddTeam)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -285,7 +284,7 @@ public class Forma1JFrame extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextFieldF1Salary, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextFieldTeamSalary, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(53, Short.MAX_VALUE))
+                        .addContainerGap(50, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanelError, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -342,11 +341,11 @@ public class Forma1JFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButtonLoad;
     private javax.swing.JButton jButtonModifyRacer;
     private javax.swing.JButton jButtonModifyTeam;
+    private javax.swing.JButton jButtonMoveToTeam;
     private javax.swing.JButton jButtonTeamSalary;
     private javax.swing.JComboBox<String> jComboBoxMoveToTeam;
     private javax.swing.JLabel jLabelName;
     private javax.swing.JLabel jLabelTitle;
-    private javax.swing.JLabel jLabelTitleMoveToTeam;
     private javax.swing.JLabel jLabelTitleRacerAge;
     private javax.swing.JLabel jLabelTitleRacerName;
     private javax.swing.JLabel jLabelTitleRacerSalary;
